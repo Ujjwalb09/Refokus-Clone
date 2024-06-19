@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Culture from "./components/Culture";
 import Stripes from "./components/Stripes";
 import Products from "./components/Products";
+import Marquees from "./components/Marquees";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Work />
       <Stripes />
       <Products />
+      <Marquees />
     </div>
   );
 }
