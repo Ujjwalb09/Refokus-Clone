@@ -32,7 +32,7 @@ function Navbar() {
           )}
         </div>
       </div>
-      <Button></Button>
+      <Button data="Get Started"></Button>
     </div>
   );
 }
