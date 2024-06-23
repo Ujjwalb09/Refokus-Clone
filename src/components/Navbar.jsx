@@ -12,9 +12,10 @@ function Navbar() {
         <div className="links flex gap-14 ml-20">
           {["Home", "Work", "Culture", "", "News"].map((elem, index) =>
             elem.length == 0 ? (
-              <span className="w-[1px] h-6 bg-zinc-700"></span>
+              <span key={index} className="w-[1px] h-6 bg-zinc-700"></span>
             ) : (
               <a
+                key={index}
                 className="font-regular text-sm flex items-center gap-1"
                 href=""
               >
