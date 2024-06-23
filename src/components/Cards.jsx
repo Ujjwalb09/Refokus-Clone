@@ -11,7 +11,7 @@ function Cards() {
           start={true}
           para={false}
           button={true}
-          hover={"bg-violet-600"}
+          hover={true}
         />
       </div>
     </div>

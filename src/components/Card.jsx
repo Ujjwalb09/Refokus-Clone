@@ -1,10 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-function Card({ width, start, para, button, hover }) {
+function Card({ width, start, para, button, hover = false }) {
   return (
-    <div
-      className={`${width} bg-zinc-800 hover:${hover} p-5 rounded-xl min-h-[35rem] flex flex-col justify-between`}
+    <motion.div
+      whileHover={{
+        backgroundColor: hover === true ? "#7443ff" : "",
+        padding: "25px",
+      }}
+      className={`${width} bg-zinc-800 p-5 rounded-xl min-h-[35rem] flex flex-col justify-between`}
     >
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
@@ -30,7 +35,7 @@ function Card({ width, start, para, button, hover }) {
           </p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
